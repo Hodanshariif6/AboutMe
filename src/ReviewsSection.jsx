@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const reviews = [
   {
@@ -15,7 +15,6 @@ const reviews = [
 ];
 
 function ReviewsSection() {
-  const navigate = useNavigate();
 
   return (
     <section className="py-10 px-4 max-w-3xl mx-auto">
@@ -30,12 +29,9 @@ function ReviewsSection() {
         ))}
       </div>
       <div className="flex justify-center mt-8">
-        <button
-          onClick={() => navigate("/reviews")}
-          className="bg-blue-600 text-white px-8 py-2 rounded-full font-semibold shadow hover:bg-blue-700 transition"
-        >
+       <Link><button className="bg-blue-600 text-white px-8 py-2 rounded-full font-semibold shadow hover:bg-blue-700 transition">
           View All Reviews
-        </button>
+        </button></Link> 
       </div>
     </section>
   );

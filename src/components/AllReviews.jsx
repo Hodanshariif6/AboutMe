@@ -1,5 +1,5 @@
 import React from "react";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const allReviews = [
   {
@@ -30,7 +30,6 @@ const allReviews = [
 ];
 
 function AllReviews() {
-  const navigate = useNavigate();
 
   return (
     <section className="py-12 px-4 max-w-4xl mx-auto">
