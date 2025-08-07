@@ -1,10 +1,9 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import image1 from './image/Screenshot 2025-08-06 081034.png';
 import image2 from './image/Screenshot 2025-08-06 084245.png';
 import image3 from './image/Screenshot 2025-08-06 084655.png';
 import image4 from './image/Screenshot 2025-08-06 085650.png';
-// Waxaad intaas ku dari kartaa sawirro kale haddii aad leedahay
 
 const allBoxes = [
   {
@@ -60,7 +59,6 @@ const allBoxes = [
 ];
 
 function AllBoxes() {
-  const navigate = useNavigate();
 
   return (
     <section className="py-12 px-4 max-w-4xl mx-auto">
@@ -75,12 +73,9 @@ function AllBoxes() {
         ))}
       </div>
       <div className="flex justify-center mt-10">
-        <button
-          onClick={() => navigate("/")}
-          className="bg-purple-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow hover:bg-purple-700 transition"
-        >
+        <Link to = '/'><button className="bg-purple-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow hover:bg-purple-700 transition">
           Back
-        </button>
+        </button></Link>
       </div>
     </section>
   );

@@ -3,7 +3,6 @@ import React from "react";
 function About() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-blue-100 to-purple-100 py-12 px-4 flex flex-col items-center">
-      {/* Qaybta 1: Xogta Shakhsiyeed */}
       <div className="bg-white rounded-xl shadow-lg p-8 max-w-2xl w-full mb-10">
         <h2 className="text-3xl font-bold text-blue-700 mb-4">About Me</h2>
         <p className="text-gray-700 text-lg">
@@ -11,7 +10,6 @@ function About() {
         </p>
       </div>
 
-      {/* Qaybta 2: Skills adag */}
       <div className="bg-gradient-to-r from-purple-200 to-blue-200 rounded-xl shadow-lg p-8 max-w-2xl w-full mb-10">
         <h3 className="text-2xl font-bold text-purple-700 mb-4">My Skills</h3>
         <ul className="grid grid-cols-2 gap-4 text-lg text-blue-900 font-semibold">
@@ -26,7 +24,6 @@ function About() {
         </ul>
       </div>
 
-      {/* Qaybta 3: Waayo-aragnimo adag */}
       <div className="bg-white rounded-xl shadow-lg p-8 max-w-2xl w-full">
         <h3 className="text-2xl font-bold text-blue-700 mb-4">Experience</h3>
         <ul className="space-y-3 text-gray-700">

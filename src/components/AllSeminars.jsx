@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const allSeminars = [
    {
@@ -29,7 +29,7 @@ const allSeminars = [
 ];
 
 function AllSeminars() {
-  const navigate = useNavigate();
+
 
   return (
     <section className="py-12 px-4 max-w-4xl mx-auto">
@@ -43,12 +43,9 @@ function AllSeminars() {
         ))}
       </div>
       <div className="flex justify-center mt-10">
-        <button
-          onClick={() => navigate("/")}
-          className="bg-purple-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow hover:bg-purple-700 transition"
-        >
+       <Link to = '/'><button className="bg-purple-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow hover:bg-purple-700 transition" >
           Back
-        </button>
+        </button></Link> 
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import image1 from './image/Screenshot 2025-08-06 081034.png';
 import image2 from './image/Screenshot 2025-08-06 084245.png';
 import image3 from './image/Screenshot 2025-08-06 084655.png';
@@ -23,7 +23,6 @@ const boxes = [
 ];
 
 function Container() {
-  const navigate = useNavigate();
 
   return (
     <section className="py-12 px-4 max-w-6xl mx-auto">
@@ -37,12 +36,9 @@ function Container() {
         ))}
       </div>
       <div className="flex justify-center mt-10">
-        <button
-          onClick={() => navigate("/allboxes")}
-          className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow hover:bg-blue-700 transition"
-        >
+       <Link to = "/allboxes"> <button className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow hover:bg-blue-700 transition">
           View All
-        </button>
+        </button></Link>
       </div>
     </section>
   );
