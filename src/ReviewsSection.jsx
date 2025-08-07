@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const reviews = [
   {
@@ -29,7 +29,9 @@ function ReviewsSection() {
         ))}
       </div>
       <div className="flex justify-center mt-8">
-       <Link><button className="bg-blue-600 text-white px-8 py-2 rounded-full font-semibold shadow hover:bg-blue-700 transition">
+       <Link to = "/reviews"> <button
+          className="bg-blue-600 text-white px-8 py-2 rounded-full font-semibold shadow hover:bg-blue-700 transition"
+        >
           View All Reviews
         </button></Link> 
       </div>
